@@ -6,15 +6,23 @@
  */
 import Box from 'Box';
 import Button from 'Button';
+import Hero from "Hero";
 import Icon from 'Icon';
+import NavBar from "NavBar";
+import PartnerGroup from "PartnerGroup";
+import Profile from "Profile";
 import Panel, {PanelHeader, PanelText} from 'Panel';
 import Typography from 'Typography';
 
 export {
   Box,
-  Button,
-  Icon,
+	Button,
+	Hero,
+	Icon,
+	NavBar,
   Panel,
+	PartnerGroup,
+	Profile,
   PanelHeader,
   PanelText,
   Typography

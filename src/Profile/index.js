@@ -1,5 +1,5 @@
 /*
- * The TeamMember component renders a card of a team member. It contains
+ * The Profile component renders a card of a team member. It contains
  * their avatar, name, title, and links to social networks.
  */
 
@@ -7,7 +7,7 @@ import React from 'react';
 import { string, object } from 'prop-types';
 
 /*
- * The TeamMember component has its own styles but also it used the styles
+ * The Profile component has its own styles but also it used the styles
  * of the Typography component. These styles are imported directly from the
  * styled component file of the Typography component.
  */
@@ -15,17 +15,17 @@ import * as s from './styles.js';
 import * as ts from '../Typography/styles.js';
 
 /*
- * The TeamMember component reuses the Icon component when it needs to
+ * The Profile component reuses the Icon component when it needs to
  * render the icons for the social networks.
  */
 import Icon from '../Icon';
 
-const TeamMember = (props) => {
+const Profile = (props) => {
   /*
    * Cards for different people output different information. This is communicated
    * to the component with properties.
    */
-  const { name, title, social, avatar } = props;
+  const { name, role, social, avatar, description, align } = props;
 
   /*
    * The component gets a list of social icons as an object. They need to be rendered as
@@ -45,24 +45,29 @@ const TeamMember = (props) => {
   const socialList = social ? <s.IconList>{socialItems}</s.IconList> : null;
 
   /*
-   * The container for the card is the TeamMember styled-component, which brings
+   * The container for the card is the Profile styled-component, which brings
    * some styles. Inside, it renders the avatar and text info.
    */
   return (
-    <s.TeamMember>
-      <img src={avatar} width="200" />
-      <ts.Header2>{name}</ts.Header2>
-      TODO: show title
+    <s.Profile align={align}>
+      <s.AvatarWrap>
+        <s.Avatar src={avatar} title={`Profile | ${name}`}/>
+      </s.AvatarWrap>
+      <s.Name>{name}</s.Name>
+      <s.Role>{role}</s.Role>
       {socialList}
-    </s.TeamMember>
+      <s.Desc>{description}</s.Desc>
+    </s.Profile>
   );
 };
 
-TeamMember.propTypes = {
+Profile.propTypes = {
   name: string.isRequired,
-  title: string.isRequired,
+  role: string.isRequired,
   avatar: string.isRequired,
-  social: object
+  social: object,
+  description: string,
+  align: string
 };
 
-export default TeamMember;
+export default Profile;
