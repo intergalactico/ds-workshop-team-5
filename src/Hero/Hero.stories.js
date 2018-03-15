@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import backgroundImage from '../../assets/new-dsconf-wide.jpg';
+import backgroundImage from '../../assets/dsconf-wide.jpg';
 import Button from '../Button/.';
 import logo from '../../assets/dsconf-logo.png';
 
