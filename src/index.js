@@ -7,15 +7,15 @@
 import Box from 'Box';
 import Button from 'Button';
 import Icon from 'Icon';
-import Section, {SectionHeader, SectionText} from 'Section';
+import Panel, {PanelHeader, PanelText} from 'Panel';
 import Typography from 'Typography';
 
 export {
   Box,
   Button,
   Icon,
-  Section,
-  SectionHeader,
-  SectionText,
+  Panel,
+  PanelHeader,
+  PanelText,
   Typography
 };
