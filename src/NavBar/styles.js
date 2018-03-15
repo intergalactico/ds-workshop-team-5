@@ -4,7 +4,8 @@ import * as ts from "../Typography/styles.js";
 
 export const NavBar = styled.div`
   background-color: rgb(1, 126, 159);
-  display: inline-block;
+	display: inline-block;
+	float: left;
   padding: 10px 0;
   width: 100%;
 `;
