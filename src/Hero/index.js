@@ -1,27 +1,29 @@
 import React from 'react'
-import PropTypes from 'prop-types';
-import Button from '../Button/.';
+import PropTypes, {oneOfType, arrayOf, node} from 'prop-types';
 import logo from '../../assets/dsconf-logo.png';
 
 import * as s from './styles.js'
 
-const Hero = ({title, subtitle, description ,action}) => {
+const Hero = ({children, title, subtitles, description, background}) => {
   return (
-    <s.Hero>
+    <s.Hero background={background}>
       <s.Logo src={logo} />
       <s.Title>{title}</s.Title>
-      <s.Subtitle>{subtitle}</s.Subtitle>
+      <s.Subtitle>
+        {subtitles.map((subtitle, index) => <p key={index}>{subtitle}</p>)}
+      </s.Subtitle>
       <s.Description>{description}</s.Description>
-      <Button onClick={action}>Action</Button>
+      {children}
     </s.Hero>
   )
 }
 
 Hero.propTypes = {
+  children: oneOfType([arrayOf(node), node]),
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
+  subtitles: PropTypes.arrayOf(PropTypes.string).isRequired,
   description: PropTypes.string.isRequired,
-  action: PropTypes.func.isRequired
+  background: PropTypes.string.isRequired,
 };
 
-export default Hero
+export default Hero;

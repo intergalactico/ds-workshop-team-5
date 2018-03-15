@@ -1,6 +1,5 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import * as ts from '../Typography/styles.js';
-import backgroundImage from '../../assets/dsconf-wide.jpg';
 
 export const Hero = styled.div`
   display: flex;
@@ -8,8 +7,10 @@ export const Hero = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 560px;
-  background: #FFF url(${backgroundImage}) no-repeat center bottom;
+  padding: 32px 0;
+  ${props => props.background && css`
+    background: #FFF url(${props.background}) no-repeat center bottom;
+  `}
 `
 
 export const Logo = styled.img`
@@ -19,10 +20,13 @@ export const Logo = styled.img`
 
 export const Title = styled(ts.Header1)`
   color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
 `;
 
 export const Subtitle = styled(ts.Header3)`
   color: #FFF;
+  text-align: center;
 `;
 
 export const Description = styled(ts.Lato)`
