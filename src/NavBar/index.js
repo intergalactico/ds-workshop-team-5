@@ -3,7 +3,7 @@ import { string, shape, arrayOf } from "prop-types";
 
 import * as s from "./styles.js";
 
-import logo from "../../assets/dsconf-logo-small.png";
+import logo from "../../assets/dsconf-square.png";
 
 const NavBar = props => {
   const { navItems } = props;

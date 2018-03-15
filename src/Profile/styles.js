@@ -17,9 +17,21 @@ export const Profile = styled.div`
   `}
 `;
 
+export const AvatarWrap = styled.div`
+  min-width: 150px;
+  min-height: 150px;
+  width: 30vmin;
+  height: 30vmin;
+  display:block;
+  border-radius: 150%;
+  overflow:hidden;
+  position:relative;
+  margin: 0 auto 12px;
+`;
+
 export const Avatar = styled.img`
-  max-width:100%;
-  height: auto;
+  width:auto;
+  height: 100%;
   display:block;
   position:absolute;
   top:50%;
@@ -70,14 +82,4 @@ export const IconListItem = styled.li`
 export const IconLink = styled.a`
   color: ${colors.grey};
   text-decoration: none;
-`;
-
-export const AvatarWrap = styled.div`
-  margin-bottom:12px;
-  width: 30vmin;
-  height: 30vmin;
-  display:block;
-  border-radius: 150%;
-  overflow:hidden;
-  position:relative;
 `;
