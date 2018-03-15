@@ -5,6 +5,7 @@ import React from 'react';
 import PropTypes, { node, arrayOf, oneOfType } from 'prop-types';
 import * as s from './styles.js'
 import Button from '../Button/.';
+import Divider from '../Divider';
 
 /*
  * Even though the component is using plain CSS, it still can re-use
@@ -40,7 +41,7 @@ const PanelHeader = ({ children }) => {
   return (
     <ts.Header1>
       {children}
-      <s.Hr />
+      <Divider />
     </ts.Header1>
   );
 };
