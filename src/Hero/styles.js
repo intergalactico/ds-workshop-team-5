@@ -21,7 +21,6 @@ export const Logo = styled.img`
 
 export const Title = styled(ts.Header1)`
   color: #FFF;
-  text-transform: uppercase;
   text-align: center;
 `;
 
