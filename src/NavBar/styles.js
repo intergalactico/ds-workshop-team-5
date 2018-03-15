@@ -1,7 +1,6 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 import * as ts from "../Typography/styles.js";
-import colors from "../Colors/colorset";
 
 export const NavBar = styled.div`
   background-color: rgb(1, 126, 159);
