@@ -2,6 +2,7 @@
  * All the button components are using the same styled-component. There is only
  * one file with styles (this one) which is imported into all the button components.
  */
+import colors from "../Colors/colorset";
 
 import styled, { css } from 'styled-components';
 import { isCircular } from 'styled-utils';
@@ -53,6 +54,16 @@ export const Button = styled.div`
   }
   ${isIcon}
   ${isCircular}
+  ${props => props.ghost && css`
+    background-color: transparent;
+    border-color: #FFF;
+    color: #FFF;
+  `}
+  ${props => props.poltergeist && css`
+    background-color: transparent;
+    border-color: ${colors.dark};
+    color: ${colors.dark};
+  `}
 `;
 
 /* Styled for a label element inside a button */
