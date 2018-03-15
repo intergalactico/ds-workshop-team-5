@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes, {oneOfType, arrayOf, node} from 'prop-types';
-import logo from '../../assets/dsconf-logo.png';
 
 import * as s from './styles.js'
 
-const Hero = ({children, title, subtitles, description, background}) => {
+const Hero = ({children, logo, title, subtitles, description, background}) => {
   return (
     <s.Hero background={background}>
       <s.Logo src={logo} />
@@ -24,6 +23,7 @@ Hero.propTypes = {
   subtitles: PropTypes.arrayOf(PropTypes.string).isRequired,
   description: PropTypes.string.isRequired,
   background: PropTypes.string.isRequired,
+  logo: PropTypes.string.isRequired,
 };
 
 export default Hero;
