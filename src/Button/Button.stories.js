@@ -41,6 +41,9 @@ storiesOf('Button', module) // eslint-disable-line no-undef
             <Button color='#000' textColor="#fff" label='2048'>Like</Button>
             <Button color='#00d1b2' textColor="#fff" label='2048'>Like</Button>
           </Box>
+          <Box>
+            <Button poltergeist>POLTERGEIST BUTTON</Button>
+          </Box>
         </div>
       );
   }))
