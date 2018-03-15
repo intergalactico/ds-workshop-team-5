@@ -9,7 +9,8 @@ export const Hero = styled.div`
   width: 100%;
   padding: 32px 0;
   ${props => props.background && css`
-    background: #FFF url(${props.background}) no-repeat center bottom;
+    background: url(${props.background}) no-repeat;
+    background-size: cover;
   `}
 `
 
