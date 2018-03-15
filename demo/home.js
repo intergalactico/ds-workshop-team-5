@@ -6,9 +6,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { Icon, Section, SectionHeader, SectionText } from '../lib/my-awesome-library'
+import { Icon, Panel, PanelHeader, PanelText } from '../lib/my-awesome-library'
 
-const st = Section.SectionTypography
+const st = Panel.PanelTypography
 
 const Home = () => {
   return (
@@ -21,10 +21,10 @@ const Home = () => {
         <Icon name='bug' color='#e91e63' isInverted size='3rem' />
       </div>
       <div>
-        <Section>
-          <SectionHeader>Hello!</SectionHeader>
-          <SectionText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</SectionText>
-        </Section>
+        <Panel>
+          <PanelHeader>Hello!</PanelHeader>
+          <PanelText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</PanelText>
+        </Panel>
       </div>
     </div>
   )

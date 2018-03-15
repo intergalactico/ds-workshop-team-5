@@ -87,7 +87,6 @@ export const Header3 = styled.h3`
 
 export const P = styled.p`
   font-family: lato;
-  color: ${colors.dark};
 `;
 
 /*
