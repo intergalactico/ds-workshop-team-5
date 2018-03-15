@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 import * as ts from "../Typography/styles.js";
 import colors from "../Colors/colorset";

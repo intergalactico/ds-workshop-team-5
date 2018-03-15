@@ -12,7 +12,6 @@ import { string, object } from 'prop-types';
  * styled component file of the Typography component.
  */
 import * as s from './styles.js';
-import * as ts from '../Typography/styles.js';
 
 /*
  * The Profile component reuses the Icon component when it needs to

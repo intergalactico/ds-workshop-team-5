@@ -11,8 +11,9 @@ import colors from '../Colors/colorset';
 
 export const Profile = styled.div`
   margin-bottom: 22.6px;
+  width: 320px;
   ${props => props.align && css `
-    text-align: ${props.align};  
+    text-align: ${props.align};
   `}
 `;
 
