@@ -10,7 +10,7 @@ npm start
 
 ### Adding a new component
 
-You can add components by using this command
+You can add components by using this command.
 ```
 npm run create-component MyComponent
 ```
