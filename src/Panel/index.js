@@ -37,7 +37,12 @@ export default Panel;
  * these wrappers are used.
  */
 const PanelHeader = ({ children }) => {
-  return (<ts.Header1>{children}</ts.Header1>);
+  return (
+    <ts.Header1>
+      {children}
+      <s.Hr />
+    </ts.Header1>
+  );
 };
 
 PanelHeader.propTypes = {

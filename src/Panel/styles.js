@@ -11,3 +11,11 @@ export const PanelContainer = styled.div`
     background: #FFF url(${props.background}) no-repeat center bottom;
   `}
 `;
+
+export const Hr = styled.hr`
+  margin-left: 0;
+  width: 120px;
+  height: 6px;
+  border: none;
+  background-color: ${colors.pink};
+`;
