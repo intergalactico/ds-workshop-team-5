@@ -21,6 +21,10 @@ export const Avatar = styled.img`
   max-width:100%;
   height: auto;
   display:block;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
 `;
 
 /*
@@ -70,4 +74,10 @@ export const IconLink = styled.a`
 
 export const AvatarWrap = styled.div`
   margin-bottom:12px;
+  width: 30vmin;
+  height: 30vmin;
+  display:block;
+  border-radius: 150%;
+  overflow:hidden;
+  position:relative;
 `;

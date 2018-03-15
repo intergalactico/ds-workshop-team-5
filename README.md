@@ -1,4 +1,8 @@
 # Development
+
+## 2019
+[New design!](https://readymag.com/u12657122/1007000/)
+
 ## Run Storybook
 
 ```

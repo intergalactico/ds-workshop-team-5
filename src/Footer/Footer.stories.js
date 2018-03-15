@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 
 import Footer from '.';
 import Button from '../Button';
@@ -14,9 +15,15 @@ const cols = [
 ];
 
 storiesOf('Footer', module)
-  .add('Single Column', () => (
-    <Footer cols={col} />
-  ))
-  .add('Multiple columns', () => (
-  	 <Footer cols={cols} />
-  ))
+  .add('Single Column',
+    withInfo(`
+ The Footer gets an array of components and displays them side to side.
+    `)(() => (
+      <Footer cols={col} />
+  )))
+  .add('Multiple Columns',
+    withInfo(`
+ The Footer gets an array of components and displays them side to side.
+    `)(() => (
+      <Footer cols={cols} />
+  )));
