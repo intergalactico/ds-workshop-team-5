@@ -7,12 +7,12 @@ import NavBar from ".";
 const navItems = [
   {
     title: "Home",
-    src: "/",
+    href: "/",
     active: true
   },
   {
     title: "About",
-    src: "/about"
+    href: "/about"
   }
 ];
 
