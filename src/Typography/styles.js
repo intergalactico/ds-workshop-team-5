@@ -89,6 +89,10 @@ export const P = styled.p`
   font-family: lato;
 `;
 
+export const A = styled.a`
+  font-family: lato;
+`;
+
 /*
  * In ordder to show in the story (documentation) what are the available
  * fonts, this component provides styles for each font. They are not

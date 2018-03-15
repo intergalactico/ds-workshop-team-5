@@ -17,7 +17,6 @@ export const Logos = styled.div`
 export const Title = styled(ts.Header2)`
 	color: rgb(255, 255, 255);
 	text-align: center;
-
 `;
 
 export const Img = styled.img`

@@ -11,7 +11,7 @@ const PartnerGroup = props => {
 			<s.Title>{title}</s.Title>
 			<s.Logos>
 				{logos.map((logo, index) => (
-					<s.Img key={index} src={logo.src} title={logo.title} />
+					<s.Img key={index} src={logo.src} alt={logo.title} />
 				))}
 			</s.Logos>
     </s.PartnerGroup>
